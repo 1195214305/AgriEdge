@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: #fef7ed;
+  color: #44403c;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef7ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 3px;
+}
+
+/* 上传区域 */
+.upload-zone {
+  border: 2px dashed #84cc16;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(132, 204, 22, 0.05) 100%);
+  transition: all 0.3s ease;
+}
+
+.upload-zone:hover,
+.upload-zone.dragover {
+  border-color: #22c55e;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(132, 204, 22, 0.1) 100%);
+}
+
+/* 扫描动画 */
+.scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #22c55e, transparent);
+  animation: scan 2s ease-in-out infinite;
+}
+
+/* 结果卡片 */
+.result-card {
+  background: white;
+  border-left: 4px solid #22c55e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.result-card.warning {
+  border-left-color: #f59e0b;
+}
+
+.result-card.danger {
+  border-left-color: #ef4444;
+}
+
+/* 进度条 */
+.progress-bar {
+  background: linear-gradient(90deg, #22c55e, #84cc16);
+  transition: width 0.3s ease;
+}
+
+/* 置信度指示器 */
+.confidence-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* 大按钮（适合触屏） */
+.touch-btn {
+  min-height: 56px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 历史记录卡片 */
+.history-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.history-card:active {
+  transform: scale(0.98);
+}

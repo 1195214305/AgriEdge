@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "assets": {
+    "directory": "frontend/dist"
+  },
+  "functions": {
+    "directory": "functions"
+  },
+  "routes": [
+    {
+      "pattern": "/api/diagnose",
+      "function": "api/diagnose"
+    }
+  ]
+}

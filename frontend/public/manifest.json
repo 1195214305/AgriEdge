@@ -1,0 +1,16 @@
+{
+  "name": "AgriEdge",
+  "short_name": "AgriEdge",
+  "description": "农作物病虫害智能识别助手",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fef7ed",
+  "theme_color": "#22c55e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
