@@ -1,7 +1,7 @@
 {
   "version": 1,
   "assets": {
-    "directory": "frontend/dist"
+    "directory": "dist"
   },
   "functions": {
     "directory": "functions"
